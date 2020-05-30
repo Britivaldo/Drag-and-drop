@@ -66,3 +66,32 @@ function drop() {
     // log('> Dropzone: Dropped');
     this.classList.remove('over');
 }
+
+const trash = document.querySelector('.trash');
+const trashboard = document.querySelector('.trash-board')
+console.log(trash);
+
+trash.addEventListener('click', trashEvent);
+
+
+function trashEvent(){
+
+    // console.log(trashboard.classList.contains('invisibel'))
+    
+    if(trashboard.classList.contains('invisibel')){
+        trashboard.classList.remove('invisibel');
+    } else {
+        trashboard.classList.add('invisibel');
+    }
+
+    
+}
+
+
+function visibel(){
+    console.log(true);
+}
+
+function invisibel(){
+    console.log(false);
+}
